@@ -1,11 +1,1 @@
-ConexionGeneracionAbstracts.py = Script para la conexion a la API de chatGPT y generacion de los artículos artificiales
-NLP.py = Realiza todo el procesamiento de lenguaje natural a los artículos reales y artificiales
-PromedioPalabrasTKA.py  = Genera el promedia de palabras en los Titulos, Keywords y Abstracts
-NumeroPalabrasA.py = Da como resultado estadisticas del minimo, maximo y el promedio de palabras por conferencia
-MinMaxKeywords.py = Calcular y mostrar el número mínimo y máximo de palabras clave por entrada
-Estadisticas.py = Imprimir estadísticas y resultados. Numero promedio de tokens sin caracteres especiales, numero promedio de stopwords, numero promedio tokens despues del proceso de steaming, numero de palabras en el diccionario
-IndiceJaccard.py = Cálculo de la metrica de Jaccard
-CosenoVectorial.py = Cálculo de la metrica de coseno vectorial
-IndiceSorensen.py = Cálculo de la metrica de Sorensen-Dice
-IndiceOverlap.py = Cálculo de la metrica de Overlap
-GraficosResultados.r = Proceso para obtener las graficas de los resultados
+Comparación de similitud entre resúmenes reales y resúmenes generados con chatGPT
