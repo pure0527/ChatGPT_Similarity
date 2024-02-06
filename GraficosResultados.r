@@ -8,20 +8,13 @@ results_jaccard <- read_csv("C:/Users/Nicker/Downloads/results_jaccard.csv", col
 results_sorensen <- read_csv("C:/Users/Nicker/Downloads/results_sorensen.csv", col_types = cols(...1 = col_skip()))
 results_overlap <- read_csv("C:/Users/Nicker/Downloads/results_overlap.csv", col_types = cols(...1 = col_skip()))
 
-# Calcular el valor mínimo y máximo
-valor_minimo <- min(results_coseno$0)
-valor_maximo <- max(results_coseno$0)
-
-#Normalizar los datos del coseno vectorial al rango de 0 a 1
-result_coseno_ <- data.frame((results_coseno$0 - valor_minimo) / (valor_maximo - valor_minimo))
-colnames(result_coseno_) <- c('0') 
-
 #Combinar todos los datos en un marco de datos
 todos_los_datos <- rbind(
-  transform(result_coseno_, conjunto = "Coseno"),
+  transform(results_coseno, conjunto = "Coseno"),
   transform(results_jaccard, conjunto = "Jaccard"),
   transform(results_sorensen, conjunto = "Sorensen"),
   transform(results_overlap, conjunto = "Overlap")
+
 )
 
 #Crear un gráfico de densidad
